@@ -12,24 +12,33 @@
       color: #fff;
       text-align: center;
     }
+
     .banner {
-     background-image: url('banner.jpg'); /* вставь название своего файла */
+      background-image: url('banner.jpg');
       background-size: cover;
       background-position: center;
-      height: 450px;
+      min-height: 60vh;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     .title-box {
       background-color: rgba(0, 0, 0, 0.6);
       padding: 20px;
       border-radius: 10px;
+      max-width: 90%;
     }
+
     h1 {
       font-size: 2.2rem;
       margin-bottom: 10px;
     }
+
+    p {
+      font-size: 1.1rem;
+    }
+
     .btn {
       background-color: #ffd700;
       color: #000;
@@ -40,10 +49,13 @@
       cursor: pointer;
       box-shadow: 0 0 10px #ffd700;
       margin-top: 20px;
+      transition: background-color 0.3s ease;
     }
+
     .btn:hover {
       background-color: #ffea00;
     }
+
     .timer {
       font-size: 1rem;
       margin-top: 10px;
@@ -62,12 +74,11 @@
   </div>
 
   <script>
-    // Таймер обратного отсчёта на 15 минут
     const timerEl = document.getElementById("timer");
-    const targetTime = new Date().getTime() + 15 * 60 * 1000;
+    const targetTime = Date.now() + 15 * 60 * 1000;
 
     function updateTimer() {
-      const now = new Date().getTime();
+      const now = Date.now();
       const distance = targetTime - now;
       if (distance > 0) {
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -77,6 +88,7 @@
         timerEl.innerHTML = "✅ Слот активирован!";
       }
     }
+
     setInterval(updateTimer, 1000);
   </script>
 </body>

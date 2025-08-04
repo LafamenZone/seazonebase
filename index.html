@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Пиратская база</title>
+  <title>Pirate Base</title>
   <style>
     body {
       margin: 0;
@@ -81,26 +81,26 @@
 <body>
   <div class="banner">
     <div class="title-box">
-      <h1>🏴‍☠️ Открой свою пиратскую базу!</h1>
-      <p>Бесплатные слоты ещё доступны — успей забрать сокровища</p>
+      <h1>🏴‍☠️ Claim Your Pirate Base!</h1>
+      <p>Free slots are still available — hurry up and grab your treasure!</p>
       <button class="btn" onclick="location.href='https://wait-page.eu/a/KrOKZH4BrVt3oEL'">
-        Забрать награду
+        Collect Reward
       </button>
       <div class="timer" id="timer"></div>
 
       <div class="content-block">
-        <p><strong>💬 Что это за база?</strong><br>
-        Добро пожаловать в "SeaZoneBase" — виртуальный проект в духе пиратских приключений. Наша база — это шанс испытать удачу, получить бонус и стать частью команды искателей сокровищ. Один клик — и ты на борту!</p>
+        <p><strong>💬 What is SeaZoneBase?</strong><br>
+        Welcome aboard SeaZoneBase — a digital pirate-themed project full of adventure and surprises. Your base is a chance to test your luck, unlock a reward, and join the treasure-hunting crew. One click — and you're sailing!</p>
 
-        <p><strong>🧭 Отзыв участника:</strong><br>
-        «Я не ожидал, что это реально работает. Уже на следующий день получил бонус. Спасибо SeaZoneBase!»<br>
-        <em>— Андрей, г. Санкт-Петербург</em></p>
+        <p><strong>🧭 Participant Review:</strong><br>
+        “Honestly, I thought it was fake. But I got my bonus the very next day. Big thanks to SeaZoneBase!”<br>
+        <em>— Andrew, Liverpool, UK</em></p>
 
-        <p><strong>👥 О нас:</strong><br>
-        Мы — команда энтузиастов, вдохновлённая атмосферой приключений и таинственных открытий. SeaZoneBase — это немного ностальгии, немного геймификации и современная награда для тех, кто верит в удачу.</p>
+        <p><strong>👥 About Us:</strong><br>
+        We're a small team of enthusiasts inspired by classic adventures. SeaZoneBase blends nostalgia, gamified reward mechanics, and modern engagement for anyone who believes in lucky treasure hunts. Each click is like a stroke of the oars into the ocean of opportunity.</p>
 
-        <p><strong>⚠️ Успей сейчас:</strong><br>
-        Слоты обновляются каждые 24 часа. Завтра ты можешь не попасть на корабль!</p>
+        <p><strong>⚠️ Act Now:</strong><br>
+        Slots reset every 24 hours. Don’t miss today’s chance — it might be gone by tomorrow!</p>
       </div>
     </div>
   </div>
@@ -115,9 +115,9 @@
       if (distance > 0) {
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        timerEl.innerHTML = `⏳ Осталось: ${minutes}м ${seconds}с`;
+        timerEl.innerHTML = `⏳ Time left: ${minutes}m ${seconds}s`;
       } else {
-        timerEl.innerHTML = "✅ Слот активирован!";
+        timerEl.innerHTML = "✅ Slot activated!";
       }
     }
 

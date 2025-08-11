@@ -1,78 +1,115 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RedMagic — Игровой смартфон нового уровня</title>
-  <meta name="description" content="Создай аккаунт в RedMagic и получи бонус. Играй на максимум с официальным партнёром Nubia.">
+  <title>RedMagic Zone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora el poder del juego móvil con RedMagic. Accesorios, estilo y rendimiento para gamers exigentes.">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #0d0d0d;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
       color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
     }
     .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 40px 20px;
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
     }
-    .logo {
-      width: 160px;
-      margin-bottom: 20px;
+    header {
+      text-align: center;
+      padding: 30px 0;
     }
-    h1 {
-      font-size: 26px;
+    header h1 {
+      font-size: 2.5em;
       color: #e60012;
       margin-bottom: 10px;
     }
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 20px;
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
     }
-    .cta-button {
+    .intro {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 1.05em;
+      color: #ddd;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .tile {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    }
+    .tile h3 {
+      color: #e60012;
+      margin-bottom: 10px;
+    }
+    .tile p {
+      font-size: 0.95em;
+      color: #ccc;
+    }
+    .cta {
+      display: block;
+      margin: 40px auto 0;
+      width: 260px;
+      text-align: center;
       background-color: #e60012;
       color: #fff;
-      padding: 14px 28px;
-      font-size: 18px;
-      text-decoration: none;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 20px;
-      transition: background 0.3s ease;
-    }
-    .cta-button:hover {
-      background-color: #ff1f2f;
-    }
-    .screenshot {
-      width: 100%;
-      max-width: 300px;
-      margin: 20px auto;
+      padding: 15px;
       border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
     }
-    footer {
-      margin-top: 40px;
-      font-size: 12px;
-      color: #888;
+    .cta:hover {
+      background-color: #ff1a2d;
+    }
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/RedMagic_logo.svg/512px-RedMagic_logo.svg.png" alt="RedMagic Logo" class="logo">
-    <h1>RedMagic — Игровой смартфон нового уровня</h1>
-    <p>RedMagic — это бренд игровых смартфонов от Nubia, созданный для максимальной производительности и комфорта.  
-    Зарегистрируйся, активируй аккаунт и получи бонус прямо сейчас.</p>
-    <img src="https://fdn2.gsmarena.com/vv/pics/nubia/nubia-red-magic-8-pro-1.jpg" alt="RedMagic Screenshot" class="screenshot">
-    <p>Официальный партнёр Nubia. Поддержка Android, iOS, Windows.  
-    Присоединяйся к тысячам геймеров по всему миру и начни играть на максимум.</p>
-    <a href="https://track.mylead.global/your-affiliate-link" class="cta-button" target="_blank">Создать аккаунт и получить бонус</a>
-    <footer>
-      Партнёрская программа RedMagic © Nubia | Безопасная страница для Pinterest
-    </footer>
+    <header>
+      <h1>RedMagic Zone</h1>
+      <p>Potencia y estilo para gamers exigentes</p>
+    </header>
+
+    <div class="intro">
+      <p>Descubre accesorios diseñados para mejorar tu experiencia de juego. RedMagic combina rendimiento, diseño y tecnología para llevarte al siguiente nivel.</p>
+    </div>
+
+    <div class="grid">
+      <div class="tile">
+        <h3>🎮 Gamepad Shadow Blade</h3>
+        <p>Control tipo consola para sesiones largas. Precisión y comodidad en cada partida.</p>
+      </div>
+      <div class="tile">
+        <h3>🔌 Cable Type-C 6A</h3>
+        <p>Carga rápida y estable. Nunca te detengas en medio del juego.</p>
+      </div>
+      <div class="tile">
+        <h3>🎧 Magic Sound Earphones</h3>
+        <p>Audio envolvente para una inmersión total. Escucha cada detalle.</p>
+      </div>
+      <div class="tile">
+        <h3>⚡ Cyber Gamepad</h3>
+        <p>Diseño futurista y rendimiento profesional. Ideal para gamers serios.</p>
+      </div>
+    </div>
+
+    <a href="https://your-hidelink-url.com" class="cta">Crear cuenta y explorar</a>
   </div>
 </body>
 </html>

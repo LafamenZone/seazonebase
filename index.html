@@ -5,30 +5,56 @@
   <title>RedMagic para Jugadores</title>
   <meta name="description" content="Explora la potencia móvil diseñada para gamers. Crea tu cuenta y accede a contenido exclusivo.">
   <style>
-    body { font-family: Arial, sans-serif; background: #0f0f0f; color: #fff; margin: 0; padding: 0; }
-    .container { max-width: 800px; margin: auto; padding: 20px; }
-    h1 { color: #e60012; font-size: 2em; margin-bottom: 10px; }
-    .screenshot { width: 100%; border-radius: 8px; margin-bottom: 20px; }
-    .cta { background: #e60012; color: #fff; padding: 15px; text-align: center; font-weight: bold; border-radius: 6px; text-decoration: none; display: block; margin-top: 20px; }
-    .features { margin-top: 20px; }
-    .features li { margin-bottom: 10px; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0f0f0f; color: #fff; margin: 0; padding: 0; }
+    .container { max-width: 960px; margin: auto; padding: 20px; }
+    header { text-align: center; padding: 20px 0; }
+    header h1 { color: #e60012; font-size: 2.5em; margin: 0; }
+    header p { font-size: 1.1em; color: #ccc; margin-top: 10px; }
+
+    .intro { text-align: center; margin-bottom: 30px; }
+    .intro p { font-size: 1.1em; color: #ddd; }
+
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .tile { background: #1a1a1a; padding: 20px; border-radius: 8px; text-align: center; }
+    .tile h3 { color: #e60012; margin-bottom: 10px; }
+    .tile p { font-size: 0.95em; color: #ccc; }
+
+    .cta { background: #e60012; color: #fff; padding: 15px; text-align: center; font-weight: bold; border-radius: 6px; text-decoration: none; display: block; margin: 40px auto 0; width: 250px; }
+
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>RedMagic: Tecnología que impulsa tu juego</h1>
-    <img src="screenshot.png" alt="Productos RedMagic" class="screenshot">
+    <header>
+      <h1>RedMagic Gamer Tech</h1>
+      <p>Potencia, estilo y control en cada partida</p>
+    </header>
 
-    <p>Descubre los dispositivos diseñados para jugadores exigentes: smartphones, tablets y accesorios que combinan estilo, potencia y rendimiento.</p>
+    <div class="intro">
+      <p>RedMagic ofrece una experiencia móvil diseñada para jugadores exigentes. Desde smartphones hasta accesorios de alto rendimiento, cada detalle está pensado para el gaming.</p>
+    </div>
 
-    <ul class="features">
-      <li>⚡ Rendimiento optimizado para gaming móvil</li>
-      <li>🎮 Accesorios que mejoran tu experiencia de juego</li>
-      <li>📱 Diseño futurista y funcionalidad avanzada</li>
-      <li>🔐 Acceso exclusivo al ecosistema RedMagic</li>
-    </ul>
-
-    <p>Regístrate para explorar más y recibir contenido personalizado para gamers.</p>
+    <div class="grid">
+      <div class="tile">
+        <h3>🎮 Gamepad Shadow Blade</h3>
+        <p>Diseño ergonómico para sesiones largas. Control tipo consola en tu móvil.</p>
+      </div>
+      <div class="tile">
+        <h3>🔌 Cable Type-C 6A</h3>
+        <p>Carga rápida y estable para que nunca te detengas en medio del juego.</p>
+      </div>
+      <div class="tile">
+        <h3>🎧 Magic Sound Earphones</h3>
+        <p>Audio envolvente y claro. Sumérgete en cada partida como nunca antes.</p>
+      </div>
+      <div class="tile">
+        <h3>⚡ Cyber Gamepad</h3>
+        <p>Control suave y potente. Rendimiento profesional para gamers serios.</p>
+      </div>
+    </div>
 
     <a href="https://your-hidelink-url.com" class="cta">Crear cuenta y explorar</a>
   </div>

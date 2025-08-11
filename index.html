@@ -1,151 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Get a short-term loan with SOSO Credit. Fast, simple, and secure.">
-  <title>SOSO Credit — Quick Loan Access</title>
+  <title>RedMagic para Jugadores</title>
+  <meta name="description" content="Explora la potencia móvil diseñada para gamers. Crea tu cuenta y accede a contenido exclusivo.">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #F3F4F6;
-      color: #000;
-      text-align: center;
-    }
-
-    .header {
-      background-color: #FF7473;
-      padding: 20px 0 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    .logo {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #fff;
-      letter-spacing: 1px;
-    }
-
-    .tagline {
-      font-size: 1rem;
-      color: #fff;
-      margin-top: 5px;
-      font-weight: 500;
-    }
-
-    .banner {
-      background-color: #F3F4F6;
-      min-height: calc(100vh - 120px);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .title-box {
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 900px;
-      margin: 40px auto;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-      line-height: 1.6;
-    }
-
-    .btn {
-      background-color: #2563EB;
-      color: #fff;
-      padding: 12px 24px;
-      font-size: 1.2rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      box-shadow: 0 0 10px #2563EB;
-      margin-top: 20px;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #1D4ED8;
-    }
-
-    .timer {
-      font-size: 1rem;
-      margin-top: 10px;
-      color: #555;
-    }
-
-    .content-block {
-      margin-top: 40px;
-      text-align: left;
-      padding: 0 20px;
-    }
-
-    .content-block strong {
-      color: #2563EB;
-    }
+    body { font-family: Arial, sans-serif; background: #0f0f0f; color: #fff; margin: 0; padding: 0; }
+    .container { max-width: 800px; margin: auto; padding: 20px; }
+    h1 { color: #e60012; font-size: 2em; margin-bottom: 10px; }
+    .screenshot { width: 100%; border-radius: 8px; margin-bottom: 20px; }
+    .cta { background: #e60012; color: #fff; padding: 15px; text-align: center; font-weight: bold; border-radius: 6px; text-decoration: none; display: block; margin-top: 20px; }
+    .features { margin-top: 20px; }
+    .features li { margin-bottom: 10px; }
   </style>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">SOSO CREDIT</div>
-    <div class="tagline">Fast loans made simple — apply online in minutes</div>
+  <div class="container">
+    <h1>RedMagic: Tecnología que impulsa tu juego</h1>
+    <img src="screenshot.png" alt="Productos RedMagic" class="screenshot">
+
+    <p>Descubre los dispositivos diseñados para jugadores exigentes: smartphones, tablets y accesorios que combinan estilo, potencia y rendimiento.</p>
+
+    <ul class="features">
+      <li>⚡ Rendimiento optimizado para gaming móvil</li>
+      <li>🎮 Accesorios que mejoran tu experiencia de juego</li>
+      <li>📱 Diseño futurista y funcionalidad avanzada</li>
+      <li>🔐 Acceso exclusivo al ecosistema RedMagic</li>
+    </ul>
+
+    <p>Regístrate para explorar más y recibir contenido personalizado para gamers.</p>
+
+    <a href="https://your-hidelink-url.com" class="cta">Crear cuenta y explorar</a>
   </div>
-
-  <div class="banner">
-    <div class="title-box">
-      <h1>💸 Need Cash Fast?</h1>
-      <p>Get a short-term loan with SOSO Credit. No delays, no hidden fees — just a simple way to access funds when you need them.</p>
-      <button class="btn" onclick="location.href='https://wait-page.eu/a/KrOKZH4BrVt3oEL'">
-        Apply Now
-      </button>
-      <div class="timer" id="timer"></div>
-
-      <div class="content-block">
-        <p><strong>📋 What is SOSO Credit?</strong><br>
-        SOSO Credit is a trusted online service that helps you secure short-term loans quickly and securely. No paperwork, no long waits — just a fast digital process.</p>
-
-        <p><strong>🚀 How It Works:</strong><br>
-        Fill out a brief application form. Once submitted, your request is reviewed instantly. If approved, funds are transferred without delay.</p>
-
-        <p><strong>✅ Why Choose SOSO?</strong><br>
-        - Fast and transparent approval<br>
-        - No hidden conditions or fees<br>
-        - Compatible with mobile and desktop devices</p>
-
-        <p><strong>⚠️ Limited Access:</strong><br>
-        Offer available for new users only. Daily slots are limited — apply before they’re gone!</p>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const timerEl = document.getElementById("timer");
-    const targetTime = Date.now() + 15 * 60 * 1000;
-
-    function updateTimer() {
-      const now = Date.now();
-      const distance = targetTime - now;
-      if (distance > 0) {
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        timerEl.innerHTML = `⏳ Time left: ${minutes}m ${seconds}s`;
-      } else {
-        timerEl.innerHTML = "✅ Slot activated!";
-      }
-    }
-
-    setInterval(updateTimer, 1000);
-  </script>
 </body>
 </html>

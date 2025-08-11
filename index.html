@@ -2,124 +2,114 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RedMagic Zone</title>
-  <meta name="description" content="Explora los mejores productos tecnológicos de RedMagic. Smartphones gaming, ofertas exclusivas y más.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora el poder del juego móvil con RedMagic. Accesorios, estilo y rendimiento para gamers exigentes.">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
       color: #fff;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
     }
     header {
       text-align: center;
-      padding: 30px 20px;
+      padding: 30px 0;
     }
-    header img {
-      height: 60px;
+    header h1 {
+      font-size: 2.5em;
+      color: #e60012;
       margin-bottom: 10px;
     }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    p {
+    header p {
       font-size: 1.1em;
       color: #ccc;
     }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 30px 20px;
-    }
-    .card {
-      background-color: #222;
-      border-radius: 10px;
-      padding: 20px;
-      width: 250px;
+    .intro {
       text-align: center;
-      box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+      margin: 30px 0;
+      font-size: 1.05em;
+      color: #ddd;
     }
-    .card img {
-      width: 100%;
-      border-radius: 8px;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .tile {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    }
+    .tile h3 {
+      color: #e60012;
       margin-bottom: 10px;
     }
-    .card h3 {
-      margin: 10px 0;
-      font-size: 1.2em;
-    }
-    .card p {
+    .tile p {
       font-size: 0.95em;
-      color: #aaa;
+      color: #ccc;
     }
     .cta {
+      display: block;
+      margin: 40px auto 0;
+      width: 260px;
       text-align: center;
-      margin: 40px 0;
-    }
-    .cta a {
       background-color: #e60012;
-      color: white;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      text-decoration: none;
+      color: #fff;
+      padding: 15px;
       border-radius: 8px;
-      display: inline-block;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
     }
-    .seo-text {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 0 20px;
-      font-size: 1em;
-      line-height: 1.6;
-      color: #bbb;
+    .cta:hover {
+      background-color: #ff1a2d;
+    }
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h1>RedMagic Zone</h1>
+      <p>Potencia y estilo para gamers exigentes</p>
+    </header>
 
-  <header>
-    <img src="redmagic-logo.png" alt="RedMagic Logo">
-    <h1>Explora los mejores productos tecnológicos</h1>
-    <p>Oficialmente asociado con RedMagic — descubre lo último en smartphones gaming</p>
-  </header>
+    <div class="intro">
+      <p>Descubre accesorios diseñados para mejorar tu experiencia de juego. RedMagic combina rendimiento, diseño y tecnología para llevarte al siguiente nivel.</p>
+    </div>
 
-  <section class="products">
-    <div class="card">
-      <img src="banner.jpg" alt="Producto 1">
-      <h3>RedMagic 9 Pro</h3>
-      <p>Potencia extrema con Snapdragon 8 Gen 3 y pantalla AMOLED de 120Hz.</p>
+    <div class="grid">
+      <div class="tile">
+        <h3>🎮 Gamepad Shadow Blade</h3>
+        <p>Control tipo consola para sesiones largas. Precisión y comodidad en cada partida.</p>
+      </div>
+      <div class="tile">
+        <h3>🔌 Cable Type-C 6A</h3>
+        <p>Carga rápida y estable. Nunca te detengas en medio del juego.</p>
+      </div>
+      <div class="tile">
+        <h3>🎧 Magic Sound Earphones</h3>
+        <p>Audio envolvente para una inmersión total. Escucha cada detalle.</p>
+      </div>
+      <div class="tile">
+        <h3>⚡ Cyber Gamepad</h3>
+        <p>Diseño futurista y rendimiento profesional. Ideal para gamers serios.</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="banner.jpg" alt="Producto 2">
-      <h3>RedMagic 8S Pro</h3>
-      <p>Diseño futurista y refrigeración activa para sesiones largas de juego.</p>
-    </div>
-    <div class="card">
-      <img src="banner.jpg" alt="Producto 3">
-      <h3>RedMagic 7</h3>
-      <p>Rendimiento sólido a precio accesible. Ideal para gamers casuales.</p>
-    </div>
-    <div class="card">
-      <img src="banner.jpg" alt="Producto 4">
-      <h3>RedMagic Accesorios</h3>
-      <p>Fundas, cargadores y más para complementar tu experiencia RedMagic.</p>
-    </div>
-  </section>
 
-  <section class="seo-text">
-    <h2>¿Por qué elegir RedMagic?</h2>
-    <p>RedMagic ofrece smartphones diseñados para gamers, con pantallas ultra rápidas, refrigeración activa y rendimiento extremo. Si buscas una experiencia móvil sin límites, estás en el lugar correcto.</p>
-    <p>Únete a miles de usuarios que ya disfrutan de la potencia RedMagic. Crea tu cuenta y accede a ofertas exclusivas, contenido especial y soporte dedicado.</p>
-  </section>
-
-  <div class="cta">
-    <a href="#">Crear cuenta y obtener bono exclusivo</a>
+    <a href="https://your-hidelink-url.com" class="cta">Crear cuenta y explorar</a>
   </div>
-
 </body>
 </html>

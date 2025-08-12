@@ -5,6 +5,12 @@
   <title>RedMagic Zone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explora el poder del juego móvil con RedMagic. Accesorios, estilo y rendimiento para gamers exigentes.">
+  <meta property="og:title" content="RedMagic Zone — Potencia para Gamers">
+  <meta property="og:description" content="Accesorios premium, estilo futurista y rendimiento extremo.">
+  <meta property="og:image" content="https://yourdomain.com/assets/redmagic-og.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico">
   <style>
     body {
       margin: 0;
@@ -67,7 +73,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
 
@@ -77,6 +83,11 @@
       border-radius: 10px;
       text-align: center;
       box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .tile:hover {
+      transform: translateY(-5px);
     }
 
     .tile h3 {
@@ -114,12 +125,24 @@
     .cta:hover {
       background-color: #ff1a2d;
     }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 30px 20px;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header img {
+        margin-bottom: 20px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="redmagic-logo.png" alt="RedMagic Logo">
+    <img src="assets/redmagic-logo.png" alt="RedMagic Logo" loading="lazy">
     <div>
       <h1>RedMagic Zone</h1>
       <p>Potencia y estilo para gamers exigentes</p>

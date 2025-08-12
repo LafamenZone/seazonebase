@@ -5,12 +5,6 @@
   <title>RedMagic Zone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explora el poder del juego móvil con RedMagic. Accesorios, estilo y rendimiento para gamers exigentes.">
-  <meta property="og:title" content="RedMagic Zone — Potencia para Gamers">
-  <meta property="og:description" content="Accesorios premium, estilo futurista y rendimiento extremo.">
-  <meta property="og:image" content="https://lafamenzone.github.io/seazonebase/redmagic-logo.png">
-  <meta property="og:url" content="https://lafamenzone.github.io/seazonebase/">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="redmagic-logo.png">
   <style>
     body {
       margin: 0;
@@ -18,95 +12,67 @@
       background-color: #0f0f0f;
       color: #fff;
     }
-
-    header {
-      width: 100%;
-      background-color: #1A1A1A;
-      padding: 40px 60px;
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      box-sizing: border-box;
-      border-radius: 12px;
-      flex-wrap: wrap;
-    }
-
-    header img {
-      width: 50px;
-      height: 50px;
-      border-radius: 8px;
-      object-fit: cover;
-      box-shadow: 0 0 8px rgba(0,0,0,0.3);
-      flex-shrink: 0;
-    }
-
-    header h1 {
-      font-size: 2.8em;
-      color: #e60012;
-      margin: 0 0 10px;
-    }
-
-    header p {
-      margin: 0 0 8px;
-      font-size: 1.2em;
-      color: #ccc;
-    }
-
-    header p.subtext {
-      font-size: 1em;
-      color: #aaa;
-      margin-bottom: 0;
-    }
-
     .container {
       max-width: 960px;
       margin: auto;
       padding: 20px;
     }
-
+    header {
+      background-color: #1A1A1A;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 10px;
+    }
+    header img {
+      height: 60px;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #e60012;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+      margin-bottom: 5px;
+    }
+    header .subtext {
+      font-size: 0.95em;
+      color: #aaa;
+    }
     .intro {
       text-align: center;
       margin: 30px 0;
       font-size: 1.05em;
       color: #ddd;
     }
-
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 20px;
     }
-
     .tile {
       background-color: #1a1a1a;
       padding: 20px;
       border-radius: 10px;
       text-align: center;
       box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
-      transition: transform 0.3s;
     }
-
-    .tile:hover {
-      transform: translateY(-5px);
-    }
-
     .tile h3 {
       color: #e60012;
       margin-bottom: 10px;
     }
-
     .tile p {
       font-size: 0.95em;
       color: #ccc;
     }
-
     .seo {
       margin: 40px 0;
       font-size: 1em;
       line-height: 1.6;
       color: #bbb;
     }
-
     .cta {
       display: block;
       margin: 40px auto 0;
@@ -121,36 +87,25 @@
       font-size: 1.1em;
       transition: background 0.3s;
     }
-
     .cta:hover {
       background-color: #ff1a2d;
     }
-
     @media (max-width: 600px) {
-      header {
-        padding: 30px 20px;
-        flex-direction: column;
-        text-align: center;
-      }
-
-      header img {
-        margin-bottom: 20px;
+      .grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <img src="redmagic-logo.png" alt="RedMagic Logo" loading="lazy">
-    <div>
+  <div class="container">
+    <header>
+      <img src="redmagic-logo.png" alt="RedMagic Logo">
       <h1>RedMagic Zone</h1>
       <p>Potencia y estilo para gamers exigentes</p>
       <p class="subtext">Sitio asociado oficialmente con RedMagic</p>
-    </div>
-  </header>
+    </header>
 
-  <div class="container">
     <div class="intro">
       <p>Descubre accesorios diseñados para mejorar tu experiencia de juego. RedMagic combina rendimiento, diseño y tecnología para llevarte al siguiente nivel.</p>
     </div>
@@ -182,6 +137,5 @@
 
     <a href="https://your-hidelink-url.com" class="cta">Crear cuenta y obtener bono exclusivo</a>
   </div>
-
 </body>
 </html>

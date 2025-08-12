@@ -1,141 +1,165 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RedMagic Zone</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explora el poder del juego móvil con RedMagic. Accesorios, estilo y rendimiento para gamers exigentes.">
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f0f;
+      background-color: #111;
       color: #fff;
     }
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 20px;
-    }
+
     header {
-      background-color: #1A1A1A;
-      text-align: center;
+      background: linear-gradient(90deg, #000 0%, #c00 100%);
       padding: 40px 20px;
-      border-radius: 10px;
-    }
-    header img {
-      height: 60px;
-      margin-bottom: 20px;
-    }
-    header h1 {
-      font-size: 2.5em;
-      color: #e60012;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.1em;
-      color: #ccc;
-      margin-bottom: 5px;
-    }
-    header .subtext {
-      font-size: 0.95em;
-      color: #aaa;
-    }
-    .intro {
-      text-align: center;
-      margin: 30px 0;
-      font-size: 1.05em;
-      color: #ddd;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       gap: 20px;
     }
-    .tile {
-      background-color: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
     }
-    .tile h3 {
-      color: #e60012;
-      margin-bottom: 10px;
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
     }
-    .tile p {
-      font-size: 0.95em;
-      color: #ccc;
+
+    .header-text h1 {
+      font-size: 36px;
+      margin: 0;
+      font-weight: bold;
     }
-    .seo {
-      margin: 40px 0;
-      font-size: 1em;
-      line-height: 1.6;
-      color: #bbb;
+
+    .header-text p {
+      font-size: 18px;
+      margin: 5px 0 0;
+      color: #eee;
     }
-    .cta {
+
+    .cta-button {
       display: block;
-      margin: 40px auto 0;
-      width: 280px;
-      text-align: center;
-      background-color: #e60012;
+      margin: 20px auto;
+      padding: 12px 24px;
+      background-color: #e60000;
       color: #fff;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #ff1a1a;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: #222;
       padding: 15px;
       border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-      transition: background 0.3s;
+      text-align: center;
     }
-    .cta:hover {
-      background-color: #ff1a2d;
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
     }
-    @media (max-width: 600px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #000;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="redmagic-logo.png" alt="RedMagic Logo">
+
+  <header>
+    <img src="redmagic-logo.png" alt="RedMagic Logo" />
+    <div class="header-text">
       <h1>RedMagic Zone</h1>
-      <p>Potencia y estilo para gamers exigentes</p>
-      <p class="subtext">Sitio asociado oficialmente con RedMagic</p>
-    </header>
-
-    <div class="intro">
-      <p>Descubre accesorios diseñados para mejorar tu experiencia de juego. RedMagic combina rendimiento, diseño y tecnología para llevarte al siguiente nivel.</p>
+      <p>Gaming Power. RedMagic Style.</p>
     </div>
+  </header>
 
-    <div class="grid">
-      <div class="tile">
-        <h3>🎮 Gamepad Shadow Blade</h3>
-        <p>Control tipo consola para sesiones largas. Precisión y comodidad en cada partida.</p>
-      </div>
-      <div class="tile">
-        <h3>🔌 Cable Type-C 6A</h3>
-        <p>Carga rápida y estable. Nunca te detengas en medio del juego.</p>
-      </div>
-      <div class="tile">
-        <h3>🎧 Magic Sound Earphones</h3>
-        <p>Audio envolvente para una inmersión total. Escucha cada detalle.</p>
-      </div>
-      <div class="tile">
-        <h3>⚡ Cyber Gamepad</h3>
-        <p>Diseño futurista y rendimiento profesional. Ideal para gamers serios.</p>
-      </div>
-    </div>
+  <a href="#signup" class="cta-button">Получить бонус</a>
 
-    <div class="seo">
-      <h2>¿Por qué elegir RedMagic?</h2>
-      <p>RedMagic es la marca líder en smartphones gaming. Sus dispositivos ofrecen pantallas ultra rápidas, refrigeración activa y potencia sin límites para los jugadores más exigentes.</p>
-      <p>Con miles de usuarios en todo el mundo, RedMagic se ha convertido en sinónimo de rendimiento móvil. Únete hoy y accede a ofertas exclusivas, accesorios premium y soporte dedicado.</p>
-    </div>
+  <main>
+    <section>
+      <h2>Аксессуары RedMagic</h2>
+      <p>Выбери свой стиль и усили свою игру.</p>
+      <div class="grid">
+        <div class="card">
+          <img src="assets/keyboard.jpg" alt="Клавиатура RedMagic" />
+          <h3>Клавиатура</h3>
+          <p>Механическая RGB клавиатура для геймеров</p>
+        </div>
+        <div class="card">
+          <img src="assets/mouse.jpg" alt="Мышь RedMagic" />
+          <h3>Игровая мышь</h3>
+          <p>Точная и быстрая — идеальна для FPS</p>
+        </div>
+        <div class="card">
+          <img src="assets/headset.jpg" alt="Гарнитура RedMagic" />
+          <h3>Гарнитура</h3>
+          <p>Объёмный звук и комфорт на долгие сессии</p>
+        </div>
+        <div class="card">
+          <img src="assets/controller.jpg" alt="Контроллер RedMagic" />
+          <h3>Контроллер</h3>
+          <p>Подключай и играй — совместим с Android</p>
+        </div>
+      </div>
+    </section>
 
-    <a href="https://your-hidelink-url.com" class="cta">Crear cuenta y obtener bono exclusivo</a>
-  </div>
+    <section id="signup" style="margin-top: 40px;">
+      <h2>Создай аккаунт и получи бонус</h2>
+      <p>Эксклюзивные предложения для новых пользователей.</p>
+      <a href="#" class="cta-button">Crear cuenta y obtener bono exclusivo</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 RedMagic Zone. Все права защищены.
+  </footer>
+
 </body>
 </html>
